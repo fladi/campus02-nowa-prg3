@@ -1,0 +1,11 @@
+01-fileio:
+  source: 01-fileio.rst
+  css:
+    - css/campus02.css
+  template: default
+  auto-console: false
+  skip-help: true
+  skip-notes: true
+  assets:
+    - figures
+    - images
