@@ -1,0 +1,12 @@
+*/css
+*/js
+*.aux
+*.fdb_latexmk
+*.fls
+*.html
+!examples/*.html
+*.log
+*.out
+*.pdf
+*.tex
+*.zip
