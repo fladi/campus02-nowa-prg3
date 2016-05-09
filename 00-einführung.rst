@@ -4,6 +4,9 @@
 
 .. title: NOWA - Programmieren 3
 
+.. role:: java(code)
+   :language: java
+
 ----
 
 Programmieren 3
