@@ -49,6 +49,7 @@ Lernziele
 * Verstehen von Netzwerkkommunikation mittels TCP-Sockets
 * Anwendung von Multithreading für Netzwerkserver
 
+----
 
 Benotung
 ========
