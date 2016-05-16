@@ -17,4 +17,14 @@
   assets:
     - figures
     - images
+02-networkio:
+  source: 02-networkio.rst
+  css:
+    - css/campus02.css
+  template: default
+  auto-console: false
+  skip-help: true
+  skip-notes: true
+  assets:
+    - figures
     - images
