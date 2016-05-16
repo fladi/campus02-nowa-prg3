@@ -20,13 +20,15 @@ File Input / Output (I/O) in Java
 Agenda
 ------
 
- * Einführung
- * Entwicklung von HTML bis HTML5
- * HTML5 Grundlagen
- * Unterschiede HTML5
- * HTML5 Varianten
- * Ausgewählte HTML Elemente
- * Übungsbeispiele
+ * Einführung in File I/O mit Java
+ * Unterscheidung Binär- und Textdaten
+ * Lesen und Schreiben von Dateien
+
+   * mit :java:`InputStream` und :java:`OutputStream`
+   * mit :java:`Reader` und :java:`Writer`
+
+ * Behandlung von :java:`IOException` und try-with-resources
+ * Zeichenkodierungen
 
 ----
 
@@ -398,7 +400,7 @@ Inhalt im Hexeditor
   00000018: 2069 7374 2065 696e   ist ein
   00000020: 2054 6578 742e        Text.
 
-De Steuerzeichen vor dem Text werden von :java:`ObjectInputStream` benutzt, um
+Die Steuerzeichen vor dem Text werden von :java:`ObjectInputStream` benutzt, um
 Klasse und Größe des zu lesenden Objekts zu ermitteln.
 
 ----
@@ -499,7 +501,7 @@ schreibt, bis das Wort "STOP" eingegeben wird.
 
 Verwenden Sie dazu den :java:`InputStream` der über :java:`System.in`
 bereitgestellt wird, sowie die Klassen :java:`InputStreamReader` und
-:java:`BufferedStreamReader`.
+:java:`BufferedReader`.
 
 ----
 
