@@ -817,7 +817,14 @@ Beispiel: UTF-8
 .. code:: java
 
   File file = new File("umlaute.txt");
-  try (PrintWriter pr = new PrintWriter(new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8))) {
+  try (
+    PrintWriter pr = new PrintWriter(
+      new OutputStreamWriter(
+        new FileOutputStream(file),
+        StandardCharsets.UTF_8
+      )
+    )
+  ) {
     pr.println("Köche machen Müsli mit Äpfel");
   } catch (IOException e) {
     e.printStackTrace();
