@@ -28,3 +28,13 @@
   assets:
     - figures
     - images
+03-multithreading:
+  source: 03.multithreading.rst
+  css:
+    - css/campus02.css
+  template: default
+  auto-console: false
+  skip-help: true
+  skip-notes: true
+  assets:
+    - figures
