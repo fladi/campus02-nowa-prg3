@@ -2,12 +2,7 @@
 :skip-help: true
 :css: css/campus02.css
 
-.. title: Network Input / Output (I/O) in Java
-
-.. _World Wide Web Consortium (W3C): http://www.w3.org/
-.. _IPv6 Verbreitung: http://www.google.ch/ipv6/statistics.html
-.. _The Java Tutorials\: Custom Networking: http://docs.oracle.com/javase/tutorial/networking/index.html
-.. _Java Platform SE 8\: java.net: http://docs.oracle.com/javase/8/docs/api/index.html?java/net/package-summary.html
+.. title: Multithreading in Java
 
 .. role:: java(code)
    :language: java
@@ -237,3 +232,35 @@ Eine Methode mit dem :java:`synchronized`-Schlüssewort ...
     }
   }
 
+----
+
+Deadlocks
+=========
+
+Ein Problem bei Synchronisation können sogenannte Deadlocks (Verklemmungen) darstellen.
+
+Dabei sperren sich **zwei oder mehrere Threads** gleichzeitig von benötigten
+Ressourcen aus. **Thread A** wartet darauf, dass **Thread B** eine Ressource
+freigibt. Gleichzeitig wartet aber **Thread B**, dass **Thread A** seine
+gesperrte Ressource freigibt.
+
+----
+
+Schema: Deadlock
+================
+
+.. figure:: figures/threads-deadlock.svg
+   :alt: Deadlock zwischen zwei Threads
+
+----
+
+Beispiel: Verbeugungen
+======================
+
+Zwei Freunde (Klasse :java:`Friend`) sind besonders auf Höflichkeit bedacht.
+Beide verbeugen (:java:`synchronized bow()`) sich dem Anderen gegenüber und
+dieser erwiedert (:java:`synchronized bowBack()`) die Verbeugung.
+
+Implementieren Sie die Klasse :java:`Friend` und ihre Methoden als
+:java:`Runnable`. Lassen Sie zwei Threads mit diesen Klassen laufen und
+beobachten Sie ihr Verhalten.
