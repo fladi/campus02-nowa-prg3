@@ -29,7 +29,7 @@
     - figures
     - images
 03-multithreading:
-  source: 03.multithreading.rst
+  source: 03-multithreading.rst
   css:
     - css/campus02.css
   template: default
